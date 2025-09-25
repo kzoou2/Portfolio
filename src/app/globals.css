@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/4587ee3bd5f6d78fdaabafaebd7c07c9?family=JAFHerb-Regular');
+
+@font-face {
+  font-family: 'JAFHerb-Regular';
+  src: url('/fonts/JAFHerb-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Presentation';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Presentation';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-5Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Presentation';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-7Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Presentation';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+
+/* @font-face {
+  font-family: "JAFHerb-Regular";
+  src: url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.eot");
+  src: url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.svg#JAFHerb-Regular")format("svg");
+  src: url('/fonts/JAFHerb-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Presentation', sans-serif;
+  /* font-weight: 400; 기본값 */
+}
+
+/* .mainhome {
+  font-family: 'JAFHerb-Regular', sans-serif;
+} */
+
