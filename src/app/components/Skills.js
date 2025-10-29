@@ -37,35 +37,38 @@ export default function Skills(){
     };
 
     return(
-        <section id='skills' className="">
-            <div className='flex flex-col gap-7 items-center'>
-                <div className="bg-gray-100 p-1.5 rounded-full flex items-center ">
-                    {categories.map((cat) => (
-                        <button key={cat} className="relative text-sm sm:text-base font-semibold px-3 py-1 rounded-full transition text-gray-400 hover:text-gray-600" onClick={() => handleClick(cat)}>
-                            <span className={`relative z-10 ${activeCategory === cat ? "text-[#40bbed]" : ""}`}>
-                                {cat}
-                            </span>
-                            {activeCategory === cat && (
-                                <div className="absolute inset-0 bg-white rounded-full z-0"></div>
-                            )}
-                        </button>
-                    ))}
+        <section id='skill' className="w-full scroll-mt-[15vh] mb-20">
+            <div>
+                <h2 className="section-index">기술 스택 및 도구</h2>
+                <p className="section-label">아래 기술 사용할 수 있습니다.</p>
+
+                <div className='flex flex-col gap-7 items-center mt-12 '>
+                    <div className="bg-gray-100 p-1.5 rounded-full flex items-center ">
+                        {categories.map((cat) => (
+                            <button key={cat} className="relative text-sm sm:text-base font-semibold px-3 py-1 rounded-full transition text-gray-400 hover:text-gray-600" onClick={() => handleClick(cat)}>
+                                <span className={`relative z-10 ${activeCategory === cat ? "text-[#40bbed]" : ""}`}>
+                                    {cat}
+                                </span>
+                                {activeCategory === cat && (
+                                    <div className="absolute inset-0 bg-white rounded-full z-0"></div>
+                                )}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+                <div className='flex justify-center mt-12 mb-20'>
+                    <div className="grid grid-cols-6 grid-rows-3 gap-5 justify-center max-w-full sm:max-w-4xl">
+                        {skills.map((skill) => (
+                            <div key={skill.name} className={`relative group/skill transition-all w-16 h-16 ${activeCategory && activeCategory !== skill.category  ? "blur-sm opacity-50" : "opacity-100"}`}>
+                                <img src={skill.img} alt={skill.name} className="rounded-md shadow-md w-14 h-14  object-contain" />
+                                <p className="absolute -bottom-1 translate-y-full left-1/2 -translate-x-1/2 px-1.5 py-0.5 bg-black/60 text-white rounded text-xs md:text-sm text-center whitespace-nowrap font-normal invisible z-10 group-hover/skill:visible">
+                                    {skill.name}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-            <div className='flex justify-center mt-12 mb-20'>
-                <div className="grid grid-cols-6 grid-rows-3 gap-5 justify-center max-w-full sm:max-w-4xl">
-                    {skills.map((skill) => (
-                        <div key={skill.name} className={`relative group/skill transition-all w-16 h-16 ${activeCategory && activeCategory !== skill.category  ? "blur-sm opacity-50" : "opacity-100"}`}>
-                            <img src={skill.img} alt={skill.name} className="rounded-md shadow-md w-14 h-14  object-contain" />
-                            <p className="absolute -bottom-1 translate-y-full left-1/2 -translate-x-1/2 px-1.5 py-0.5 bg-black/60 text-white rounded text-xs md:text-sm text-center whitespace-nowrap font-normal invisible z-10 group-hover/skill:visible">
-                                {skill.name}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-
         </section>
     )
 }
