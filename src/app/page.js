@@ -1,9 +1,10 @@
 import Image from "next/image";
-import AboutMe from "./components/AboutMe";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import HomeMain from "./components/HomeMain";
-import HeaderNav from "./components/HeaderNav";
+import AboutMe from "./Components/AboutMe";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import HomeMain from "./Components/HomeMain";
+import HeaderNav from "./Components/HeaderNav";
+import Experience from "./Components/Experience";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeaderNav/>
       <AboutMe id='aboutme'/>
       <Skills id="skills" />
+      <Experience id='experience'/>
       <Projects id="projects" />
 
     </main>

@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
-@import url('https://db.onlinewebfonts.com/c/4587ee3bd5f6d78fdaabafaebd7c07c9?family=JAFHerb-Regular');
-
-@font-face {
-  font-family: 'JAFHerb-Regular';
-  src: url('/fonts/JAFHerb-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
     font-family: 'Presentation';
@@ -36,19 +27,6 @@
 }
 
 
-/* @font-face {
-  font-family: "JAFHerb-Regular";
-  src: url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.eot");
-  src: url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/4587ee3bd5f6d78fdaabafaebd7c07c9.svg#JAFHerb-Regular")format("svg");
-  src: url('/fonts/JAFHerb-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-} */
-
 @import "tailwindcss";
 
 
@@ -75,17 +53,21 @@ html {
 }
 
 
+@layer components {
+  .section-index {
+    @apply text-lg font-semibold uppercase tracking-wide text-[#40bbed] text-center mt-10;
+  }
+
+  .section-label {
+    @apply text-2xl  text-gray-900 text-center mb-10;
+  }
+}
 
 
 body {
   background: var(--background);
   color: var(--foreground);
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Presentation', sans-serif;
   /* font-weight: 400; 기본값 */
 }
-
-/* .mainhome {
-  font-family: 'JAFHerb-Regular', sans-serif;
-} */
 
