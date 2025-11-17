@@ -1,5 +1,6 @@
 
 module.exports = {
+    darkMode: 'class', // 또는 'media'
     content: [
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
@@ -8,7 +9,6 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                cinzel: ['Cinzel', 'serif'],
                 // jafherb: ['JAFHerb-CondensedRegular', 'sans-serif'],
                 jaf: ["JAFHerb-Regular", 'sans-serif']
                 

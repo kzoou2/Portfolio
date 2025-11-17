@@ -3,24 +3,23 @@ import React from "react";
 const Modal = ({ children, onClose}) => {
 
     return (
-        <div className="fixed inset-0 z-20 flex items-center justify-center bg-black/50  py-10 px-10 max-md:px-4 max-md:py-4" onClick={onClose} >
-            <div className="bg-white rounded-2xl max-w-4xl w-full p-5 relative" onClick={(e) => e.stopPropagation()}>  
+        <div className="fixed inset-0 z-20 flex items-center justify-center bg-black/10 backdrop-blur-[6px]  dark:bg-black/40 dark:backdrop-blur-md py-10 px-4 sm:px-6 md:px-10 max-md:py-6 " onClick={onClose} >
+
+
+            {/* <div className="bg-white/100 dark:bg-[#1A1B1E]  border border-white/10 shadow-xl rounded-2xl max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-5xl p-4 sm:p-6 md:p-8 relative " onClick={(e) => e.stopPropagation()}>   */}
+            <div className="modal-scroll overflow-y-auto bg-white/100 dark:bg-[#1A1B1E] border border-white/10 shadow-xl relative  mx-auto max-h-[95vh] md:max-h-[96vh]
+                w-full h-full max-md:rounded-xl max-md:p-4 sm:max-w-lg
+                sm:w-auto sm:h-auto sm:rounded-2xl md:max-w-4xl lg:max-w-5xl p-4 sm:p-6 md:p-8 " onClick={(e) => e.stopPropagation()}>
+
+            {/* <div className="absolute z-50  flex justify-end top-4 right-4 ">
+                <button onClick={onClose} aria-label="Close"
+                    className="font-semibold text-xl w-9 h-9 flex items-center justify-center rounded-full text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white
+                                backdrop-blur-sm transition bg-white/60 dark:bg-white/5 border border-gray-300/80 dark:border-white/10 shadow-[0_2px_10px_rgba(0,0,0,0.08)] dark:shadow-[0_2px_10px_rgba(0,0,0,0.3)]hover:bg-gray-300/70 dark:hover:bg-white/10">
+                    ✕
+                </button>
+            </div> */}
+            
                 {children}
-
-
-
-                {/* <div className="absolute top-8 -right-16 -translate-y-1/2 flex flex-col gap-3 items-center">
-                    <button onClick={onClose} className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-gray-700 hover:text-black text-lg" >
-                        ✕
-                    </button>
-
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-gray-700 hover:text-black text-lg">
-                        🐙
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-gray-700 hover:text-black text-lg">
-                        🌐
-                    </a>
-                </div> */}
 
             </div>
         </div>

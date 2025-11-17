@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "LeeKyungJoo's Portfolio",
+  title: "LeeKJ's Portfolio",
   description: "",
 };
 
