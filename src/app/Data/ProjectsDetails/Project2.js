@@ -89,7 +89,7 @@ export const Project2 ={
             items:[
                 {label:"[문제점]", text:"사용자가 DM 채팅방을 변경할 때 이전 채팅방 구독이 완전히 해제되지 않아, 새로운 방과 이전 방에서 동일한 메시지가 중복으로 수신되는 문제 발생"}, 
                 {label:"[원인]", text:"subscribe/unsubscribe 로직에서 기존 구독 객체를 제대로 관리하지 않음.\n client.current가 null일 수 있어 구독 객체(subscription)를 저장하지 못하고 있음.\nuseEffect 의 의존성(dmRoomId, connected) 변경 시 기존 구독 취소가 올바르게 수행되지 않음."},
-                {label:"[해결]", text:"구독 객체를 별도의 ref(subscriptionRef)로 저장하고, 채팅방 변경 시 이전 구독을 unsubscribe 하도록 수정.\n subscribe 함수 시작 시 client.current가 존재하는지 확인.\n3. useEffect cleanup 함수에서 subscriptionRef.current.unsubscribe()를 호출하여 구독을 안전하게 해제."},
+                {label:"[해결]", text:"구독 객체를 별도의 ref(subscriptionRef)로 저장하고, 채팅방 변경 시 이전 구독을 unsubscribe 하도록 수정.\n subscribe 함수 시작 시 client.current가 존재하는지 확인.\n useEffect cleanup 함수에서 subscriptionRef.current.unsubscribe()를 호출하여 구독을 안전하게 해제."},
             ],
         }
     ],

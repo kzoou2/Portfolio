@@ -7,15 +7,15 @@ export default function HeaderNav() {
 
     return(
         <header className="w-full sm:w-auto sticky top-4 z-20 px-3 sm:px-0">
-            <div className="mb-10 w-full h-10 md:h-12 px-4 md:px-6 sm:pr-1.5 md:pr-2 bg-foreground/[0.08] backdrop-blur-lg rounded-full flex justify-between items-center gap-1.5 md:gap-2 dark:bg-light/10">
-                
+            {/* <div className="mb-10 w-full h-10 md:h-12 px-4 md:px-6 sm:pr-1.5 md:pr-2 bg-foreground/[0.08] backdrop-blur-lg rounded-full flex justify-between items-center gap-1.5 md:gap-2 dark:bg-light/10"> */}
+                        <div className="mb-10 w-full h-10 md:h-12 px-4 md:px-6 sm:pr-1.5 md:pr-2 bg-foreground/[0.08] backdrop-blur-lg rounded-full flex justify-between items-center gap-1.5 md:gap-2 dark:bg-[#]">
                 <a className="no-underline" href="#top">
                     <div className="relative mr-4">
                         <div className="shape flex gap-2">
-                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#9BE200]"></div>
-                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#F59E0B]"></div>
-                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#40bbed]"></div>
-                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#df6556]"></div>
+                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#9BE200] dark:bg-[#8DFC7F]"></div>
+                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#F59E0B] dark:bg-[#FFEA00]"></div>
+                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#40bbed] dark:bg-[#3ECFFF]"></div>
+                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#df6556] dark:bg-[#AD6CFF]"></div>
                         </div>
                     </div>
                 </a>

@@ -1,4 +1,5 @@
 "use client";
+import Modal from "./Modal";
 import { useRouter,usePathname  } from "next/navigation";
 import { IoLogoGithub } from "react-icons/io";
 import { MdOutlinePlayCircleOutline } from 'react-icons/md';
@@ -15,21 +16,21 @@ export default function Projects({ data  }){
     const router = useRouter();
     const pathname = usePathname();
 
-  const openModal = (project) => {
-    setSelectedProject(project);
-      window.history.pushState(null, "", `/project/${project.id}`);
-  };
+    const openModal = (project) => {
+        setSelectedProject(project);
+        window.history.pushState(null, "", `/#project/${project.id}`);
+    };
 
-  const closeModal = () => {
-    setSelectedProject(null);
-    window.history.pushState(null, "", "/"); // 원래 페이지로 복귀
-  };
+    const closeModal = () => {
+        setSelectedProject(null);
+        window.history.pushState(null, "", "/"); // 원래 페이지로 복귀
+    };
 
-  useEffect(() => {
-    const handlePopState = () => setSelectedProject(null);
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
-  }, []);
+    useEffect(() => {
+        const handlePopState = () => setSelectedProject(null);
+        window.addEventListener("popstate", handlePopState);
+        return () => window.removeEventListener("popstate", handlePopState);
+    }, []);
 
     // const router = useRouter();
     // const handleClick = (e) =>{
@@ -40,7 +41,7 @@ export default function Projects({ data  }){
 
 
     return(
-        <section id="projects" className='w-full mb-20'>
+        <section id="projects" className='w-full mb-20 '>
             <div>
                 <h2 className="section-index">프로젝트 상세</h2>
                 <p className="section-label">주요 프로젝트의 세부 사항을 확인해보세요</p>
@@ -52,12 +53,11 @@ export default function Projects({ data  }){
 
                             <div className='relative'>
                                 <div className='mb-4'>
-                                    <img src={data.img} alt={data.title} className="relative mb-2.5 md:mb-4 w-full h-36 md:h-40 rounded-md overflow-hidden"/>
+                                    {/* <img src={data.img} alt={data.title} className="relative mb-2.5 md:mb-4 w-full h-36 md:h-40 rounded-md overflow-hidden"/> */}
                                 </div>
 
                                 <h3 className="text-xl font-bold mb-1"> {data.title}</h3>
                                 <div className='flex space-x-2 mb-4'>
-                                    {/* {} */}
                                 </div>
                                 
                                 <div className='text-gray-600 mb-6 space-y-2 min-h-[3.5rem] leading-relaxed line-clamp-2'>
@@ -90,6 +90,9 @@ export default function Projects({ data  }){
 
                 {selectedProject && (
                 <ProjectDetail project={selectedProject} closeModal={closeModal} />
+                // <Modal onClose={closeModal}>
+                //     <ProjectDetail project={selectedProject} />
+                // </Modal>
                 )}
             </div>
         </section>
