@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AboutMe from "./Components/AboutMe";
+import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import HomeMain from "./Components/HomeMain";
@@ -13,7 +13,7 @@ export default function Home() {
 
       <HomeMain id='top'/>
       <HeaderNav/>
-      <AboutMe id='aboutme'/>
+      <About id='about'/>
       <Skills id="skills" />
       <Experience id='experience'/>
       <Projects id="projects" />
