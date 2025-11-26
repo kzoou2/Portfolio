@@ -2,17 +2,18 @@ export const Project1 = {
     id:"1",
     title:"Pringles",
     subTitle:"사용자 선호도 기반 제주 관광지 추천 및 일정 자동 생성 서비스",
+    Summary:"개인의 선호도 가중치와 위치 기반 거리 계산을 적용하여 여행 일정의 복잡함을 최소화한 맞춤형 추천 알고리즘 구현 프로젝트",
     subText:[
         "사용자가 입력한 가격·별점·리뷰 가중치를 기반으로 관광지를 추천하고, 위치 기반 거리 계산을 통해 일정별로 최적의 관광지를 자동 배치해주는 제주 여행 일정 생성 서비스입니다. ",
         "여행 계획의 복잡함을 줄이고, 개인의 선호와 이동 동선을 함께 고려해 누구나 손쉽게 나만의 여행 일정을 만들 수 있도록 만든 프로젝트입니다."],
 
-    img:"https://raw.githubusercontent.com/kzoou2/kzoou2/refs/heads/main/assets/portfolio/Project2/%EB%A9%94%EC%9D%B8%ED%94%BC%EB%93%9C%20(2).jpg",
+    img:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project1-1.jpg",
     info:{
         period: "2023.08 ~ 2023.10",
         member: "3명",
         skills: [
-            { name: "React", img: "/image/React.png" },
             { name: "JavaScript", img: "/image/JavaScript.png" },
+            { name: "React", img: "/image/React.png" },
             { name: "Bootstrap", img: "/image/Bootstrap.png" },
             { name: "github", img: "/image/github.png" },
             { name: "Figma", img: "/image/Figma.png" },
@@ -74,5 +75,31 @@ export const Project1 = {
             ],
         }
     ],
-    images:[],
+    images:[
+        {
+            subject:'메인 화면',
+            imgurl:'https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project1-1.jpg',
+        },
+        {
+            subject:"관광지 상세",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project1-2.jpg",
+        },
+        {
+            subject:"마이페이지",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project1-3.jpg",
+        },
+        {
+            subject:"일정생성 - 관광지 선택",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project1-4.jpg",
+        },
+        {
+            subject:"일정생성 - 가중치 입력",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project1-5.jpg",
+        },
+        {
+            subject:"일정생성결과",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project1-6.jpg",
+            
+        },
+    ],
 };

@@ -22,7 +22,7 @@ export default function HeaderNav() {
 
 
                 <ul className="hidden sm:flex gap-1.5 md:gap-2 items-center list-none p-0 indent-0">
-                    {["AboutMe", "Skill", "Experience", "Projects"].map((item) => (
+                    {["About", "Skills", "Experience", "Projects"].map((item) => (
                         <a key={item} href={`#${item.toLowerCase()}`} className="no-underline">
                         <li className="px-3 md:px-4 py-1.5 md:py-2 rounded-full flex gap-0.5 items-center transition-colors">
                             <span className="text-xs md:text-sm font-semibold whitespace-nowrap text-foreground/60">

@@ -2,43 +2,6 @@ import { ExperienceData } from "../Data/ExperienceData";
 
 export default function Experience(){
 
-    // const data = [
-    //     {
-    //         name: '플레이데이터',
-    //         period: '2023/04 - 10 ',
-    //         type: '교육',
-    //         description: ['빅데이터 기반 지능형SW 및 MLOps 개발자 양성 과정수료'],
-    //         readme:['Python, MySQL, Oracle을 활용한 데이터 수집, 분석 학습 및 실습', '머신러닝과 딥러닝 모델을 활용한 데이터 분석 실습','Docker와 Kubernetes를 활용한 환경 구성 경험', 'React와 Spring 프레임워크를 활용한 웹 개발 실습'],
-
-    //     },
-    //     {
-    //         name: '포트폴리오',
-    //         period: '2025/09',
-    //         type: '프로젝트',
-    //         description: ['Next.js 기반 개인 포트폴리오 웹사이트'],
-
-    //         readme:'',
-
-    //     },
-    //     {
-    //         name: 'BeatBuddy',
-    //         period: '2023/11 - 2024/02',
-    //         type: '프로젝트',
-    //         description: ['React 기반 플레이리스트 공유 SNS 웹사이트'],
-    //         readme:'',
-
-    //     },
-    //     {
-    //         name: 'Pringles',
-    //         period: '2023/8 - 10',
-    //         type: '프로젝트',
-    //         description: ['제주 관광지 추천 및 일정 생성'],
-
-    //         readme:'',
-
-    //     },
-    // ]
-
     const grouped = ExperienceData.reduce((acc, item)=>{
         if (!acc[item.type]) acc[item.type] = [];
         acc[item.type].push(item);
@@ -77,22 +40,32 @@ export default function Experience(){
                                     <div className="sm:pl-0 pl-2 sm:col-span-2 flex flex-col gap-2">
                                         <div className="flex flex-col gap-1">
                                             <p className="text-base md:text-lg font-semibold">{item.name}</p>
+
                                             {item.description.map((desc, i) => (
                                                 <p key={i} className="text-base md:text-base font-normal text-foreground/60 whitespace-pre-wrap">{desc}</p>
                                             ))}
-                                            {item.readme && (
+
+                                            {item.skills && item.skills.length > 0 && (
+                                                <div className="flex gap-2 mt-1 flex-wrap">
+                                                    {item.skills.map((skill, i) => (
+                                                        <img key={i} className="w-6 h-6 " src={skill.img} alt={skill.name} title={skill.name}  />
+                                                    ))}
+                                                </div>
+                                            )}
+                                            {/* {item.readme && (
                                                 <ul className="list-disc pl-5 text-sm md:text-sm text-foreground/60">
                                                 {item.readme.map((r, i) => (
                                                     <li key={i}>{r}</li>
                                                 ))}
                                                 </ul>
-                                            )}
+                                            )} */}
                                         </div>
                                     </div>
 
                                 </div>
                             ))}
                         </div>
+
                     </div>
                 ))}
             </div>

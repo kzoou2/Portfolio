@@ -9,7 +9,7 @@ const Modal = ({ children, onClose}) => {
             {/* <div className="bg-white/100 dark:bg-[#1A1B1E]  border border-white/10 shadow-xl rounded-2xl max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-5xl p-4 sm:p-6 md:p-8 relative " onClick={(e) => e.stopPropagation()}>   */}
             <div className="modal-scroll overflow-y-auto bg-white/100 dark:bg-[#1A1B1E] border border-white/10 shadow-xl relative  mx-auto max-h-[95vh] md:max-h-[96vh]
                 w-full h-full max-md:rounded-xl max-md:p-4 sm:max-w-lg
-                sm:w-auto sm:h-auto sm:rounded-2xl md:max-w-4xl lg:max-w-5xl p-4 sm:p-6 md:p-8 " onClick={(e) => e.stopPropagation()}>
+                sm:w-auto sm:h-auto sm:rounded-2xl md:max-w-4xl lg:max-w-4xl p-4 sm:p-6 md:p-8 " onClick={(e) => e.stopPropagation()}>
 
             {/* <div className="absolute z-50  flex justify-end top-4 right-4 ">
                 <button onClick={onClose} aria-label="Close"
