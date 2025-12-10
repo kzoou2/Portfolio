@@ -63,10 +63,10 @@ export const ExperienceData = [
         type: '프로젝트',
         description: ['사용자 선호도 기반 제주 관광지 추천 및 일정 자동 생성 서비스'],
         skills: [
-            { name: "JavaScript", img: "/icons/JavaScript.svg" },
+            { name: "JavaScript", img: "/icons/Javascript.svg" },
             { name: "React", img: "/icons/React.svg" },
             { name: "Bootstrap", img: "/icons/Bootstrap.svg" },
-            { name: "github", img: "/icons/github.svg" },
+            { name: "github", img: "/icons/Github.svg" },
             { name: "Figma", img: "/icons/Figma.svg" },
         ],
         readme:[
