@@ -6,7 +6,7 @@ export const ExperienceData = [
         description: ['빅데이터 기반 지능형SW 및 MLOps 개발자 양성 과정수료'],
         skills:[
             { name: "Python", img: "/icons/Python.svg" },
-            { name: "JavaScript", img: "/icons/JavaScript.svg" },
+            { name: "JavaScript", img: "/icons/Javascript.svg" },
             { name: "React", img: "/icons/React.svg" },
             { name: "Mysql", img: "/icons/Mysql.svg" },
             { name: "Django", img: "/icons/Django.svg" },
@@ -21,11 +21,11 @@ export const ExperienceData = [
         type: '프로젝트',
         description: ['Next.js와 Tailwind CSS를 구현한 반응형 개인 포트폴리오 웹사이트'],
         skills: [
-            { name: "JavaScript", img: "/icons/JavaScript.svg" },
+            { name: "JavaScript", img: "/icons/Javascript.svg" },
             { name: "Next.js", img: "/icons/Nextjs.svg" },
             { name: "Tailwind CSS", img: "/icons/Tailwindcss.svg"},
-            { name: "Vercel", img: "/icons/vercel.svg" },
-            { name: "github", img: "/icons/github.svg" },
+            { name: "Vercel", img: "/icons/Vercel.svg" },
+            { name: "github", img: "/icons/Github.svg" },
         ],
         readme:[
             "Next.js App Router 기반 페이지 구조 설계 및 정적 렌더링(SSG) 적용",
@@ -41,10 +41,10 @@ export const ExperienceData = [
         type: '프로젝트',
         description: ['사용자 맞춤 플레이리스트와 SNS 기능을 결합한 음악 기반 소셜 플랫폼'],
         skills: [
-            { name: "JavaScript", img: "/icons/JavaScript.svg" },
+            { name: "JavaScript", img: "/icons/Javascript.svg" },
             { name: "React", img: "/icons/React.svg" },
             { name: "Bootstrap", img: "/icons/Bootstrap.svg" },
-            { name: "github", img: "/icons/github.svg" },
+            { name: "github", img: "/icons/Github.svg" },
             { name: "Figma", img: "/icons/Figma.svg" },
         ],
         readme:[

@@ -9,21 +9,21 @@ export default function SkillsSection(){
     const categories = ["Language", "FrontEnd", "BackEnd", "DB","Tools"];
     const skills = [
         { name: "JavaScript", img: "/icons/Javascript.svg", category:"Language" },
-        { name: "Python", img: "/icons/python.svg", category:"Language" },
-        { name: "HTML5", img: "/icons/html5.svg", category:"Language"  },
-        { name: "CSS3", img: "/icons/css3.svg", category:"Language" },
+        { name: "Python", img: "/icons/Python.svg", category:"Language" },
+        { name: "HTML5", img: "/icons/Html5.svg", category:"Language"  },
+        { name: "CSS3", img: "/icons/Css3.svg", category:"Language" },
 
         { name: "React", img: "/icons/React.svg", category:"FrontEnd" },
         { name: "Next.js", img: "/icons/Nextjs.svg",category:"FrontEnd" },
         { name: "Tailwind CSS", img: "/icons/Tailwindcss.svg", category:"FrontEnd" },
         { name: "Bootstrap", img: "/icons/Bootstrap.svg" , category:"FrontEnd"},
 
-        { name: "Spring Boot", img: "/icons/springboot.svg",category:"BackEnd" }, 
+        { name: "Spring Boot", img: "/icons/Springboot.svg",category:"BackEnd" }, 
         { name: "Node.js",img: "/icons/Node.svg",category:"BackEnd" },
         { name: "Django", img: "/icons/Django.svg", category:"BackEnd" },
         { name: "MySQL", img: "/icons/Mysql.svg", category:"DB" },
 
-        { name: "Github", img: "/icons/github.svg",category:"Tools" },
+        { name: "Github", img: "/icons/Github.svg",category:"Tools" },
         { name: "Git", img: "/icons/Git.svg", category:"Tools" },
         { name: "Vercel", img: "/icons/Vercel.svg", category:"Tools" },
         { name: "Figma", img: "/icons/Figma.svg", category:"Tools" },

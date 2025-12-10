@@ -9,11 +9,11 @@ export const Project3 = {
         period: "2025.08 ~ 진행중",
         member: "개인",
         skills: [
-            { name: "JavaScript", img: "/icons/JavaScript.svg" },
+            { name: "JavaScript", img: "/icons/Javascript.svg" },
             { name: "Next.js", img: "/icons/Nextjs.svg" },
             { name: "Tailwind CSS", img: "/icons/Tailwindcss.svg"},
-            { name: "Vercel", img: "/icons/vercel.svg" },
-            { name: "github", img: "/icons/github.svg" },
+            { name: "Vercel", img: "/icons/Vercel.svg" },
+            { name: "github", img: "/icons/Github.svg" },
         ],
     },
     links:[

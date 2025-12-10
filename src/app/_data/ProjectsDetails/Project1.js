@@ -12,10 +12,10 @@ export const Project1 = {
         period: "2023.08 ~ 2023.10",
         member: "3명",
         skills: [
-            { name: "JavaScript", img: "/icons/JavaScript.svg" },
+            { name: "JavaScript", img: "/icons/Javascript.svg" },
             { name: "React", img: "/icons/React.svg" },
             { name: "Bootstrap", img: "/icons/Bootstrap.svg" },
-            { name: "github", img: "/icons/github.svg" },
+            { name: "github", img: "/icons/Github.svg" },
             { name: "Figma", img: "/icons/Figma.svg" },
         ],
     },
