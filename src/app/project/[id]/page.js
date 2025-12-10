@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectDetail from "@/app/_components/ProjectDetail";
-import { ProjectsData } from "@/app/_data/ProjectsDetails/ProjectsData";
+import ProjectDetail from "../../_components/ProjectDetail";
+import { ProjectsData } from "../../_data/ProjectsDetails/ProjectsData"
 
 export default function ProjectPage({ params }) {
     const resolvedParams = React.use(params);
