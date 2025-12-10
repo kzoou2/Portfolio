@@ -2,7 +2,7 @@
 
 import { useState} from "react";
 import { useParams, useRouter } from "next/navigation";
-import { ProjectsData } from "@/app/data/ProjectsDetails/ProjectsData"; 
+import { ProjectsData } from "../data/ProjectsDetails/ProjectsData"; 
 import { IoLogoGithub } from "react-icons/io";
 import { FiExternalLink, FiLink } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
@@ -189,28 +189,6 @@ export default function ProjectDetail(){
                         ))}
                     </div>
                 )}
-
-                {/* 이미지 섹션 */}
-                {/* {project.images?.length > 0 && (
-                    <div className="mt-5">
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-[#40bbed] dark:bg-[#3ECFFF]"></div>
-                            <h3 className="font-bold text-2xl leading-none">작업화면</h3>
-                        </div>
-
-                        <p className="text-sm italic text-foreground/60 mb-4 ml-4 sm:ml-6"> * 이미지 클릭시 크게 볼 수 있습니다.</p>
-
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-5 ">
-                            {project.images.map((img, i) => (
-                                <div key={i} className="flex flex-col">
-                                    <img src={img.imgurl} alt={img.subject} onClick={() => setLightboxIndex(i)} className="rounded-lg border border-white/10 shadow-xl0 cursor-pointer"/>
-                                    <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mt-1 items-center text-center truncate">[{img.subject}]</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    
-                )} */}
 
                 {/* 이미지 섹션 */}
                 {project.images?.length > 0 && (
