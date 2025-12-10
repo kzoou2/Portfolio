@@ -1,6 +1,6 @@
 "use client";
 
-import { ProjectsData } from '../data/ProjectsDetails/ProjectsData';
+import { ProjectsData } from '../_data/ProjectsDetails/ProjectsData';
 import ProjectCard from '../_components/ProjectCard';
 
 export default function ProjectsSection(){

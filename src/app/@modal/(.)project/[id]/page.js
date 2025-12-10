@@ -1,5 +1,5 @@
 import ProjectDetail from "../../_components/ProjectDetail";
-import { ProjectsData } from "../../data/ProjectsDetails/ProjectsData";
+import { ProjectsData } from "@/app/_data/ProjectsDetails/ProjectsData";
 
 export default function ProjectModalPage({ params }) {
     

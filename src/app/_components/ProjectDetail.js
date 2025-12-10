@@ -2,7 +2,7 @@
 
 import { useState} from "react";
 import { useParams, useRouter } from "next/navigation";
-import { ProjectsData } from "../data/ProjectsDetails/ProjectsData"; 
+import { ProjectsData } from "../_data/ProjectsDetails/ProjectsData"; 
 import { IoLogoGithub } from "react-icons/io";
 import { FiExternalLink, FiLink } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";

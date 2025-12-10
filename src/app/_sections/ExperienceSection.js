@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import { ExperienceData } from "../data/ExperienceData";
+import { ExperienceData } from "../_data/ExperienceData";
 import { IoIosArrowForward  } from "react-icons/io";
 
 export default function ExperienceSection(){
