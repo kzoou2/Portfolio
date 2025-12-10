@@ -16,7 +16,7 @@ export const metadata = {
   description: "",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal }) {
   return (
     <html lang="en">
       <head>
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        {modal}
       </body>
     </html>
   );

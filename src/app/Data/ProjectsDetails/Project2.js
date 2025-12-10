@@ -2,23 +2,22 @@ export const Project2 ={
     id:"2",
     title:"BeatBuddy",
     subTitle:"플레이리스트 공유 SNS 웹사이트",
-    Summary:"음악 감상과 추천을 넘어 SNS 기능을 결합하여 감정과 순간을 기록 및 공유하며, 태그 기반의 개인화된 플레이리스트를 제공하는 음악 소통 플랫폼",
+    Summary:"음악 감상과 태그 기반 플레이리스트에 SNS 기능을 더한 음악 공유 플랫폼",
     subText:[
         "BeatBuddy는 음악의 beat와 친구의 buddy를 합쳐 만든 이름으로, 나만의 플레이리스트를 만들어 친구들과 공유하고 소통할수 있는 음악 기반 SNS 플랫폼입니다.",
         "기존 음악 서비스가 감상과 추천에 집중되어 있었다면, BeatBuddy는 음악에 SNS 기능을 결합해 감정과 순간을 기록하고 나눌 수 있도록 기획한 서비스입니다.",
         "태그 기반의 개인화된 플레이리스트를 통해 사용자들이 취향과 감정으로 연결되는 새로운 음악 소통의 형태를 제안합니다.",
-
     ],
     img:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/Project2-playlist.jpg",
     info:{
         period: "2024.03 ~ 2024.06",
         member: "4명 (FE 2, BE 2)",
         skills: [
-            { name: "JavaScript", img: "/image/JavaScript.png" },
-            { name: "React", img: "/image/React.png" },
-            { name: "Bootstrap", img: "/image/Bootstrap.png" },
-            { name: "github", img: "/image/github.png" },
-            { name: "Figma", img: "/image/Figma.png" },
+            { name: "JavaScript", img: "/icons/JavaScript.svg" },
+            { name: "React", img: "/icons/React.svg" },
+            { name: "Bootstrap", img: "/icons/Bootstrap.svg" },
+            { name: "github", img: "/icons/github.svg" },
+            { name: "Figma", img: "/icons/Figma.svg" },
         ],
     },
     links:[
@@ -86,9 +85,9 @@ export const Project2 ={
             ],
         },
         {
-            title:'DM 채팅방에서 메시지 중복 수신 문제',
+            title:'DM 채팅방 메시지 중복 수신 문제',
             items:[
-                {label:"[문제점]", text:"사용자가 DM 채팅방을 변경할 때 이전 채팅방 구독이 완전히 해제되지 않아, 채팅방 재입장시 동일한 메시지가 중복으로 수신되는 문제 발생"}, 
+                {label:"[문제점]", text:"DM 채팅방을 변경할 때 이전 채팅방 구독이 완전히 해제되지 않아, 채팅방 재입장시 동일한 메시지가 중복으로 수신되는 문제 발생"}, 
                 {label:"[원인]", text:"subscribe/unsubscribe 로직에서 기존 구독 객체를 제대로 관리하지 않음.\n client.current가 null일 수 있어 구독 객체(subscription)를 저장하지 못하고 있음.\nuseEffect 의 의존성(dmRoomId, connected) 변경 시 기존 구독 취소가 올바르게 수행되지 않음."},
                 {label:"[해결]", text:"구독 객체를 별도의 ref(subscriptionRef)로 저장하고, 채팅방 변경 시 이전 구독을 unsubscribe 하도록 수정.\n subscribe 함수 시작 시 client.current가 존재하는지 확인.\n useEffect cleanup 함수에서 subscriptionRef.current.unsubscribe()를 호출하여 구독을 안전하게 해제."},
             ],
