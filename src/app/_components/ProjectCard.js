@@ -8,12 +8,11 @@ export default function ProjectCard({ project }) {
         <div className=" w-[350px] max-w-full ">
             <div className="group rounded-2xl overflow-hidden bg-white/30 dark:bg-white/5 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-1">
 
-                <div className="relative w-full h-48 sm:h-56 overflow-hidden">
+                <div className="relative w-full h-48 sm:h-56 overflow-hidden border-b border-gray-200/40 dark:border-white/10">
                     <img className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src={project.img} alt={project.title}/>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                 </div>
 
-                <div className="p-5 flex flex-col gap-3">
+                <div className="p-5 flex flex-col gap-3 bg-white/40 dark:bg-white/5">
 
                     {project.category && (
                         <p className="text-xs font-medium text-gray-600 dark:text-gray-400 tracking-wide">

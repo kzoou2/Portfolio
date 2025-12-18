@@ -4,7 +4,7 @@ export const Project3 = {
     subTitle:"Next.js 기반으로 제작한 반응형 개인 포트폴리오 웹사이트",
     Summary:"Next.js와 Tailwind CSS를 구현한 반응형 개인 포트폴리오 웹사이트",
     subText:"Next.js App Router와 컴포넌트 모듈화를 활용해 구조적으로 설계했으며, Tailwind CSS 기반의 반응형 UI로 다양한 디바이스에서 자연스러운 사용자 경험을 제공하도록 구현했습니다.",
-    img:"https://raw.githubusercontent.com/kzoou2/kzoou2/refs/heads/main/assets/portfolio/Project2/%EB%A9%94%EC%9D%B8%ED%94%BC%EB%93%9C%20(2).jpg",
+    img:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/project3-7.png",
     info:{
         period: "2025.08 ~ 진행중",
         member: "개인",
@@ -51,5 +51,32 @@ export const Project3 = {
     //         items:[],
     //     }
     // ],
-    images:[],
+    images:[
+        {
+            subject:'메인 화면-반응형 및 다크모드',
+            imgurl:'https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/project3-1.jpg',
+
+        },
+        {
+            subject:"핵심역량 및 가치",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/project3-2.png",
+        },
+        {
+            subject:"기술스택",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/project3-3.png",
+        },
+        {
+            subject:'경험 및 이력',
+            imgurl:'https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/project3-4.png',
+
+        },
+        {
+            subject:"프로젝트",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/project3-5.png",
+        },
+        {
+            subject:"프로젝트 상세",
+            imgurl:"https://raw.githubusercontent.com/kzoou2/Portfolio/refs/heads/main/src/app/assets/images/project3-6.png",
+        }
+    ],
 };
