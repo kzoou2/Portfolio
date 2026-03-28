@@ -37,15 +37,15 @@ export const ExperienceData = [
     },
     {
         name: 'BeatBuddy',
-        period: '2023.11 - 2024.02',
+        period: '2023.11 - 2024.03',
         type: '프로젝트',
         description: ['사용자 맞춤 플레이리스트와 SNS 기능을 결합한 음악 기반 소셜 플랫폼'],
         skills: [
             { name: "JavaScript", img: "/icons/Javascript.svg" },
             { name: "React", img: "/icons/React.svg" },
+            { name: "Socket.io", img: "/icons/SocketIo.svg"},
             { name: "Bootstrap", img: "/icons/Bootstrap.svg" },
             { name: "github", img: "/icons/Github.svg" },
-            { name: "Figma", img: "/icons/Figma.svg" },
         ],
         readme:[
             "WebSocket 활용한 실시간 DM 기능 구현",

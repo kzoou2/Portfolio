@@ -17,6 +17,7 @@ export default function SkillsSection(){
         { name: "Next.js", img: "/icons/Nextjs.svg",category:"FrontEnd" },
         { name: "Tailwind CSS", img: "/icons/Tailwindcss.svg", category:"FrontEnd" },
         { name: "Bootstrap", img: "/icons/Bootstrap.svg" , category:"FrontEnd"},
+        { name: "Socket.io", img: "/icons/SocketIo.svg", category:"FrontEnd"},
 
         { name: "Spring Boot", img: "/icons/Springboot.svg",category:"BackEnd" }, 
         { name: "Node.js",img: "/icons/Node.svg",category:"BackEnd" },
