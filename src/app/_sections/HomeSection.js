@@ -1,6 +1,5 @@
 
 "use client"; 
-import Logo from "../../../public/Logo";
 import { motion } from "framer-motion";
 
 export default function HomeSection(){
@@ -8,7 +7,6 @@ export default function HomeSection(){
         <section className="mainhome min-h-[85vh] w-[85%] mx-auto flex flex-col justify-center items-center md:items-center gap-2 md:gap-4 ">
             <div className="flex items-end gap-4 md:gap-6">
 
-            {/* <Logo /> */}
 
             </div>
             <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide leading-[1.3] md:leading-[1.25] text-balance dark:text-[#E4E4E4]">

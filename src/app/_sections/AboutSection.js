@@ -1,6 +1,5 @@
 
 import { AboutData } from "../_data/AboutData";
-// import Logo from "../../../public/Logo";
 
 export default function AboutSection(){
     const interview = [
